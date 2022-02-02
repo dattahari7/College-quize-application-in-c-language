@@ -33,11 +33,11 @@ void personalInformation()
     // scanf(" %d", &choosesubject);
 }
 
-void outputtable()
+void result()
 {
     printf("\n\n\t\tDo you want to see your result(yes/no or y/n):");
-    // scanf("%s", &resultyesno);
-    gets(resultyesno);
+    scanf("%s", &resultyesno);
+    // gets(resultyesno);
     if (resultyesno == "y" || resultyesno == "yes")
     {
         system("cls");
@@ -69,5 +69,19 @@ void outputtable()
     else
     {
         printf("\n\n\n\t\t\tYou Have Tried Your Best :)......");
+    }
+}
+
+void takeExamAgain()
+{
+    printf("\n\n\t\tDo you want to give exam again ?(yes/no or y/n):");
+    scanf(" %c", &resultyesno);
+    if (resultyesno == "yes" || resultyesno == "y")
+    {
+        goto again_give_exam;
+    }
+    else
+    {
+        printf("\n\n\t\tThank You :).......");
     }
 }

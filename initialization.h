@@ -11,3 +11,7 @@ void examIndex();
 void giveAns();
 void personalInformation();
 void result();
+void htmlExam();
+void clagExam();
+void tallyExam();
+void takeExamAgain();
