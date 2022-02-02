@@ -1,8 +1,10 @@
 #include "initialization.h"
 #include "defining_Fuction.h"
-
+int score = 0;
+char chooseoption;
 void tallyExam()
 {
+    int i;
     printf("\n\n\t\t\t!!Are You redy Press Enter....!!");
     if (getch() == 13)
     {
@@ -15,7 +17,7 @@ void tallyExam()
                 printf("\nQ1.Accounting is the language of_______.\n");
                 printf("A.Business\t\t\t\tB.E-Commerce\n");
                 printf("C.Commerce\t\t\t\tD.Economic\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'A' || chooseoption == 'a')
@@ -47,7 +49,7 @@ void tallyExam()
                 printf("\nQ2.Who communicated to  the user of accounting information ?\n");
                 printf("A.Computer Infomation\t\t\t\tB.Internet Infomation\n");
                 printf("C.Web Infomation\t\t\t\tD.Finacial Infomation\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'D' || chooseoption == 'd')
@@ -79,7 +81,7 @@ void tallyExam()
                 printf("\nQ3.While preparing and presenting the finacial statement what is neccessary to develop?\n");
                 printf("A.GAAP\t\t\t\tB.AGAP\n");
                 printf("C.GACP\t\t\t\tD.CPGA\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'A' || chooseoption == 'a')
@@ -110,7 +112,7 @@ void tallyExam()
                 printf("\nQ4.What is accounting standard?\n");
                 printf("A.Scope Of Accounting\t\t\t\tB.Rules\n");
                 printf("C.Accounting  Principles And Rules\t\t\t\tD.Accounting\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'C' || chooseoption == 'c')
@@ -141,7 +143,7 @@ void tallyExam()
                 printf("\nQ5.Who adopt the indian accounting standard?\n");
                 printf("A.Companies In Africa\t\t\t\tB.Companies In Us\n");
                 printf("C.Companies In India\t\t\t\tD.Companies In China\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'C' || chooseoption == 'c')
@@ -172,7 +174,7 @@ void tallyExam()
                 printf("\nQ6.What is basic policy documents of accounting standard?\n");
                 printf("A.Transferency\t\t\t\tB.Relability\n");
                 printf("C.Consistancy\t\t\t\tD.All of these\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'D' || chooseoption == 'd')
@@ -203,7 +205,7 @@ void tallyExam()
                 printf("\nQ7.How many objectives of accounting standard?\n");
                 printf("A.One\t\t\t\tB.Two\n");
                 printf("C.Five\t\t\t\tD.Eight\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'C' || chooseoption == 'c')
@@ -234,7 +236,7 @@ void tallyExam()
                 printf("\nQ8.Who prevent the users from reaching and misleading conclusions?\n");
                 printf("A.Financial Accounting\t\t\t\tB.Finacial Statement\n");
                 printf("C.Accounting Standard\t\t\t\tD.None of these\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'C' || chooseoption == 'c')
@@ -265,7 +267,7 @@ void tallyExam()
                 printf("\nQ9.What term become the basic for auditing the book of account?\n");
                 printf("A.Policies\t\t\t\tB.Guidlines\n");
                 printf("C.No anyone\t\t\t\tD.Both A and B\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'D' || chooseoption == 'd')
@@ -296,7 +298,7 @@ void tallyExam()
                 printf("\nQ10.What is accounting standards in the world of accounting?\n");
                 printf("A.Rolling Autherity\t\t\t\tB.Finacial Statement\n");
                 printf("C.Rolling Commerce\t\t\t\tD.Relability\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'A' || chooseoption == 'a')
@@ -327,7 +329,7 @@ void tallyExam()
                 printf("\nQ11.What laydown accounting standard in return format?\n");
                 printf("A.Accounting Policies\t\t\t\tB.Rules\n");
                 printf("C.Regulation\t\t\t\tD.All of these\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'D' || chooseoption == 'd')
@@ -358,7 +360,7 @@ void tallyExam()
                 printf("\nQ12.Who help to messure the performence of the managment of an entity?\n");
                 printf("A.Accounting Standard\t\t\t\tB.Policies\n");
                 printf("C.Rules\t\t\t\tD.Performence\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'A' || chooseoption == 'a')
@@ -389,7 +391,7 @@ void tallyExam()
                 printf("\nQ13.The process of determining the monitory worth of something is_______.\n");
                 printf("A.Distance\t\t\t\tB.Differece\n");
                 printf("C.Valuation\t\t\t\tD.Calculation\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'C' || chooseoption == 'c')
@@ -420,7 +422,7 @@ void tallyExam()
                 printf("\nQ14.What defines the process of valuation?\n");
                 printf("A.Calculation\t\t\t\tB.Distace\n");
                 printf("C.Earning\t\t\t\tD.Persent Value Of An Entity\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'D' || chooseoption == 'd')
@@ -451,7 +453,7 @@ void tallyExam()
                 printf("\nQ15.Value of any entity depends on this________.\n");
                 printf("A.Life & Ifficiency\t\t\t\tB.Structure\n");
                 printf("C.Mentenans,Location\t\t\t\tD.All of these\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'D' || chooseoption == 'd')
@@ -488,6 +490,6 @@ void tallyExam()
     }
     else
     {
-        printf("Be ready and try letter....")
+        printf("Be ready and try letter....");
     }
 }

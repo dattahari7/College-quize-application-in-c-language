@@ -22,6 +22,7 @@ void giveAns()
 
 void personalInformation()
 {
+    int fullname[50], classname[5];
     printf("\n\n\nEnter Your Full Name:");
     gets(fullname);
     //    scanf(" %s",&fullname);
@@ -35,6 +36,8 @@ void personalInformation()
 
 void result()
 {
+    int choosesubject, againchoosesubject;
+    char resultyesno[3], chooseoption, subjectname[3][70] = {"HTML Languag", "CProgramming", "Tally ERP.9."};
     printf("\n\n\t\tDo you want to see your result(yes/no or y/n):");
     scanf("%s", &resultyesno);
     // gets(resultyesno);
@@ -62,10 +65,6 @@ void result()
         printf("\n\t|_________________|_______|_____________|______________|_______|");
         printf("\n\n\n\t\t\tYou Have Tried Your Best :)......");
     }
-    else if (resultyesno == "n" || resultyesno == "no")
-    {
-        printf("\n\n\n\t\t\tYou Have Tried Your Best :)......");
-    }
     else
     {
         printf("\n\n\n\t\t\tYou Have Tried Your Best :)......");
@@ -78,7 +77,7 @@ void takeExamAgain()
     scanf(" %c", &resultyesno);
     if (resultyesno == "yes" || resultyesno == "y")
     {
-        goto again_give_exam;
+        // goto again_give_exam;
     }
     else
     {

@@ -1,8 +1,10 @@
 #include "initialization.h"
 #include "defining_Fuction.h"
-
+int score = 0;
+char chooseoption;
 void clangExam()
 {
+    int i;
     printf("\n\n\t\t\t!!Are You redy Press Enter....!!");
     if (getch() == 13)
     {
@@ -50,7 +52,7 @@ void clangExam()
                 printf("A. AT & T's Bell Laboratories of USA in 1972\t\t\t\tB.AT & T's Bell Laboratories of USA in 1970\n");
                 printf("C.Sun Microsystems in 1973\t\t\t\tD.Cambridge University in 1972\n");
 
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'A' || chooseoption == 'a')
@@ -83,7 +85,7 @@ void clangExam()
                 printf("A.An Editor\t\t\t\tB.A compiler\n");
                 printf("C.An operating system\t\t\t\tD.None of the above\n");
 
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'B' || chooseoption == 'b')
@@ -116,7 +118,7 @@ void clangExam()
                 printf("A.An alphabet\t\t\t\tB.A number\n");
                 printf("C.A special symbol other than underscore\t\t\t\tD.both (b) and (c)\n");
 
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'D' || chooseoption == 'd')
@@ -149,7 +151,7 @@ void clangExam()
                 printf("A.double and chars\t\t\t\tB.floats and doubles\n");
                 printf("C.ints and floats\t\t\t\tD.ints and chars\n");
 
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'D' || chooseoption == 'd')
@@ -182,7 +184,7 @@ void clangExam()
                 printf("A.[]\t\t\t\tB.{}\n");
                 printf("C.()\t\t\t\tD.None of the above\n");
 
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'C' || chooseoption == 'c')
@@ -215,7 +217,7 @@ void clangExam()
                 printf("A.int num[6] = { 2, 4, 12, 5, 45, 5 } ;\t\t\t\tB.int n{} = { 2, 4, 12, 5, 45, 5 } ;\n");
                 printf("C.int n{6} = { 2, 4, 12 } ;\t\t\t\tD.int n(6) = { 2, 4, 12, 5, 45, 5 } ;\n");
 
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'A' || chooseoption == 'a')
@@ -248,7 +250,7 @@ void clangExam()
                 printf("A.Sequential\t\t\t\tB.Random\n");
                 printf("C.Sequential and Random\t\t\t\tD.None of the above\n");
 
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'A' || chooseoption == 'a')
@@ -280,7 +282,7 @@ void clangExam()
                 printf("\nQ9.Which is the right way to declare constant in C?\n");
                 printf("A.int constant var =10;\t\t\t\tB.int const var = 10;\n");
                 printf("C.const int var = 10;\t\t\t\tD.B & C Both\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'D' || chooseoption == 'd')
@@ -312,7 +314,7 @@ void clangExam()
                 printf("\nQ10.What is C Tokens?\n");
                 printf("A.The smallest individual units of c program\t\t\t\tB.The basic element recognized by the compiler\n");
                 printf("C.The largest individual units of program\t\t\t\tD.A & B Both\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'D' || chooseoption == 'd')
@@ -343,7 +345,7 @@ void clangExam()
                 printf("\nQ11.In switch statement, each case instance value must be _______?\n");
                 printf("A.Constant\t\t\t\tB.Variable\n");
                 printf("C.Special Symbol\t\t\t\tD.None of the above\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'A' || chooseoption == 'a')
@@ -375,7 +377,7 @@ void clangExam()
                 printf("\nQ12.What is the work of break keyword?\n");
                 printf("A.Halt execution of program\t\t\t\tB.Restart execution of program\n");
                 printf("C.Exit from loop or switch statement\t\t\t\tD.None of the above\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'C' || chooseoption == 'c')
@@ -406,7 +408,7 @@ void clangExam()
                 printf("\nQ13.Which one of the following is not a linear data structure?\n");
                 printf("A.Array\t\t\t\tB.Binary Tree\n");
                 printf("C.Queue\t\t\t\tD.Stack\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'B' || chooseoption == 'b')
@@ -438,7 +440,7 @@ void clangExam()
                 printf("\nQ14.Recursive functions are executed in a?\n");
                 printf("A.First In First Out Order\t\t\t\tB.Load Balancing\n");
                 printf("C.Parallel Fashion\t\t\t\tD.Last In First Out Order\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'D' || chooseoption == 'd')
@@ -470,7 +472,7 @@ void clangExam()
                 printf("\nQ15.Which is the right way to declare constant in C?\n");
                 printf("A.int constant var =10;\t\t\t\tB.int const var = 10;\n");
                 printf("C.const int var = 10;\t\t\t\tD.B & C Both\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'D' || chooseoption == 'd')
@@ -506,6 +508,6 @@ void clangExam()
     }
     else
     {
-        printf("Be ready and try letter....")
+        printf("Be ready and try letter....");
     }
 }

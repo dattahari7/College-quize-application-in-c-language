@@ -1,8 +1,11 @@
 #include "initialization.h"
 #include "defining_Fuction.h"
+int score = 0;
+char chooseoption;
 
 void htmlExam()
 {
+    int i;
     printf("\n\n\t\t\t!!Are You redy Press Enter....!!");
     if(getch()==13)
     {
@@ -22,7 +25,7 @@ void htmlExam()
                 {
                     if (chooseoption == 'D' || chooseoption == 'd')
                     {
-                        score = score + 2;
+                        score +=2;
                     }
                 }
                 else
@@ -49,7 +52,7 @@ void htmlExam()
                 printf("A.Webpages\t\t\t\tB.Motherbord\n");
                 printf("C.Network\t\t\t\tD.Computer\n");
 
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'A' || chooseoption == 'a')
@@ -81,7 +84,7 @@ void htmlExam()
                 printf("A.Global Network\t\t\t\tB.Computer Network\n");
                 printf("C.Local Network\t\t\t\tD.Wide Network\n");
 
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'A' || chooseoption == 'a')
@@ -112,7 +115,7 @@ void htmlExam()
                 printf("\n\nQ4.Which page is not frequently changed ?\n");
                 printf("A.Dynamic Page\t\t\t\tB.Rolling Page\n");
                 printf("C.Static Page\t\t\t\tD.A4 Page\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'C' || chooseoption == 'c')
@@ -143,7 +146,7 @@ void htmlExam()
                 printf("\n\nQ5.Static page which code contain ?\n");
                 printf("A.PYTHON\t\t\t\tB.PHP\n");
                 printf("C.JAVA\t\t\t\tD.HTML\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'D' || chooseoption == 'd')
@@ -174,7 +177,7 @@ void htmlExam()
                 printf("\n\nQ6.Collection of Webpages releted to same domain or field and interlink called ?\n");
                 printf("A.Website\t\t\t\tB.Server\n");
                 printf("C.Network\t\t\t\tD.Computer\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'A' || chooseoption == 'a')
@@ -205,7 +208,7 @@ void htmlExam()
                 printf("\n\nQ7.Website is central location of various_______.\n");
                 printf("A.Network\t\t\t\tB.Computer\n");
                 printf("C.Webpage\t\t\t\tD.Server\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'C' || chooseoption == 'c')
@@ -236,7 +239,7 @@ void htmlExam()
                 printf("\n\nQ8.Which tag is used to display the text by removing all extra blank spaces and blank lines ?\n");
                 printf("A.Paragraph Tag\t\t\t\tB.List Tag\n");
                 printf("C.body Tag\t\t\t\tD.HR Tag\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'A' || chooseoption == 'a')
@@ -267,7 +270,7 @@ void htmlExam()
                 printf("\n\nQ9.Which tag is used to draw horizontal rule of line on webpage ?\n");
                 printf("A.Paragraph Tag\t\t\t\tB.List Tag\n");
                 printf("C.body Tag\t\t\t\tD.HR Tag\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'D' || chooseoption == 'd')
@@ -298,7 +301,7 @@ void htmlExam()
                 printf("\n\nQ10.Which tag is used to show scrolling text ?\n");
                 printf("A.Underline Tag\t\t\t\tB.Smaller Tag\n");
                 printf("C.List Tag\t\t\t\tD.Marquee Tag\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'D' || chooseoption == 'd')
@@ -329,7 +332,7 @@ void htmlExam()
                 printf("\n\nQ11.The term URL is______.\n");
                 printf("A.Uniform Resource Locater\t\t\t\tB.Uniform Resource Location\n");
                 printf("C.Unicqe Resourse Locater\t\t\t\tD.Unknow Resource Locater\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'A' || chooseoption == 'a')
@@ -360,7 +363,7 @@ void htmlExam()
                 printf("\n\nQ12.URL also called as_______.\n");
                 printf("A.Server Address\t\t\t\tB.Localhost\n");
                 printf("C.Web Address\t\t\t\tD.Computer Address\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'C' || chooseoption == 'c')
@@ -391,7 +394,7 @@ void htmlExam()
                 printf("\n\nQ13.For successful communication what factors are necessary.\n");
                 printf("A.Hardware\t\t\t\tB.Software\n");
                 printf("C.Protocol\t\t\t\tD.All OF These\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'D' || chooseoption == 'd')
@@ -422,7 +425,7 @@ void htmlExam()
                 printf("\n\nQ14.The protocol user on internet also called____.\n");
                 printf("A.Internet Protocol\t\t\t\tB.Web Protocol\n");
                 printf("C.Both A and B\t\t\t\tD.Webserver\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'C' || chooseoption == 'c')
@@ -453,7 +456,7 @@ void htmlExam()
                 printf("\n\nQ15.What is FTP ?\n");
                 printf("A.Client-Server Protocol\t\t\t\tB.Sever Protocol\n");
                 printf("C.Client Protocol\t\t\t\tD.HTTP Protocol\n");
-                giveans();
+                giveAns();
                 if (chooseoption == 'A' || chooseoption == 'a' || chooseoption == 'B' || chooseoption == 'b' || chooseoption == 'C' || chooseoption == 'c' || chooseoption == 'D' || chooseoption == 'd')
                 {
                     if (chooseoption == 'A' || chooseoption == 'a')
@@ -488,7 +491,7 @@ void htmlExam()
     }
     else
     {
-        printf("Be ready and try letter....")
+        printf("Be ready and try letter....");
     }
 }
     
