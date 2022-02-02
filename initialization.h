@@ -10,3 +10,4 @@ int choosesubject, i, againchoosesubject;
 void examIndex();
 void giveAns();
 void personalInformation();
+void result();
